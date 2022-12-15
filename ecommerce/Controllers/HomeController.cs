@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ecommerce.Models;
+using ecommerce.DAL;
 
 namespace ecommerce.Controllers;
 
@@ -15,6 +16,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        EcommerceDotnetCoreDibboContext context = new EcommerceDotnetCoreDibboContext();
+        var data = context.Brands;
+
         return View();
     }
 

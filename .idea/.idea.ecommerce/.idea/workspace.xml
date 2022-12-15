@@ -5,22 +5,56 @@
     <projectFile profileName="IIS Express">ecommerce/ecommerce.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7985ed6a-1a4a-4583-8481-b37d9c6e48da" name="Changes" comment="" />
+    <list default="true" id="31e10414-4880-4457-bb9f-e15bfc9b11ef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ecommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ecommerce/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/net6.0/ecommerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/net6.0/ecommerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/net6.0/ecommerce.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/net6.0/ecommerce.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/net6.0/ecommerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/net6.0/ecommerce.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ecommerce.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ref/ecommerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/ref/ecommerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/refint/ecommerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/net6.0/refint/ecommerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2BNRrD5aWgxziWn0z9I1Xwq46Qt" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CIQ3MvOXZQuftXVooxQHix87PW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -60,20 +94,36 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7985ed6a-1a4a-4583-8481-b37d9c6e48da" name="Changes" comment="" />
-      <created>1656744781682</created>
+      <changelist id="31e10414-4880-4457-bb9f-e15bfc9b11ef" name="Changes" comment="" />
+      <created>1658487435515</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1656744781682</updated>
-      <workItem from="1656744782689" duration="282000" />
+      <updated>1658487435515</updated>
+      <workItem from="1658487502994" duration="64000" />
+      <workItem from="1658487620976" duration="304000" />
+      <workItem from="1670869407778" duration="53000" />
+      <workItem from="1671039144836" duration="263000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

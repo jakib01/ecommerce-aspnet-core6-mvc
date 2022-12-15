@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerce", "ecommerce\ecommerce.csproj", "{3F5FF0C8-B44A-4E89-AFB9-BB40F66B5A7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerce", "ecommerce\ecommerce.csproj", "{99EB37F2-CF75-440B-A079-8878FE1A3F2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F5FF0C8-B44A-4E89-AFB9-BB40F66B5A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F5FF0C8-B44A-4E89-AFB9-BB40F66B5A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F5FF0C8-B44A-4E89-AFB9-BB40F66B5A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F5FF0C8-B44A-4E89-AFB9-BB40F66B5A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99EB37F2-CF75-440B-A079-8878FE1A3F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99EB37F2-CF75-440B-A079-8878FE1A3F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EB37F2-CF75-440B-A079-8878FE1A3F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99EB37F2-CF75-440B-A079-8878FE1A3F2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
