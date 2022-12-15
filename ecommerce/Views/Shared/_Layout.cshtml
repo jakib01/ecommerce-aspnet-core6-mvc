@@ -4,12 +4,27 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - ecommerce</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/ecommerce.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/ecommerce.styles.css" asp-append-version="true"/>*@
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="~/template/css/bootstrap.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/font-awesome.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/elegant-icons.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/nice-select.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/jquery-ui.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/owl.carousel.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/slicknav.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/template/css/style.css" asp-append-version="true">
+
+
 </head>
 <body>
-<header>
+
+@*<header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ecommerce</a>
@@ -30,6 +45,7 @@
         </div>
     </nav>
 </header>
+
 <div class="container">
     <main role="main" class="pb-3">
         @RenderBody()
@@ -41,9 +57,29 @@
         &copy; 2022 - ecommerce - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
 </footer>
+
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>*@
+
+@RenderBody()
+
+
+ <!-- Js Plugins -->
+<script src="~/template/js/jquery-3.3.1.min.js" asp-append-version="true"></script>
+<script src="~/template/js/bootstrap.min.js" asp-append-version="true"></script>
+<script src="~/template/js/jquery.nice-select.min.js" asp-append-version="true"></script>
+<script src="~/template/js/jquery-ui.min.js" asp-append-version="true"></script>
+<script src="~/template/js/jquery.slicknav.js" asp-append-version="true"></script>
+<script src="~/template/js/mixitup.min.js" asp-append-version="true"></script>
+<script src="~/template/js/owl.carousel.min.js" asp-append-version="true"></script>
+<script src="~/template/js/main.js" asp-append-version="true"></script>
+
+
 @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
+
 </html>

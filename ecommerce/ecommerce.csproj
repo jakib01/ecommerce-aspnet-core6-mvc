@@ -17,6 +17,7 @@
     <ItemGroup>
       <Folder Include="DAL\" />
       <Folder Include="Services\" />
+      <Folder Include="wwwroot\template\" />
     </ItemGroup>
 
 </Project>
