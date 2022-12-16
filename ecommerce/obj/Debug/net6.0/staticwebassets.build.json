@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hOURYWE1vm0SLXF1MbCpMx6CfYRgqFbzoZow7zh9Ukk=",
+  "Hash": "jKSo9jk+TDcG3aOj9pEb5r+8OFxvg1Xras7aAqCWzQs=",
   "Source": "ecommerce",
   "BasePath": "_content/ecommerce",
   "Mode": "Default",
@@ -2633,6 +2633,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\template\\js\\owl.carousel.min.js"
+    },
+    {
+      "Identity": "F:\\Code\\ASP.NET\\ecommerce-aspnet-core6-mvc\\ecommerce\\wwwroot\\template\\login\\css\\main.css",
+      "SourceId": "ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Code\\ASP.NET\\ecommerce-aspnet-core6-mvc\\ecommerce\\wwwroot\\",
+      "BasePath": "_content/ecommerce",
+      "RelativePath": "template/login/css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\login\\css\\main.css"
+    },
+    {
+      "Identity": "F:\\Code\\ASP.NET\\ecommerce-aspnet-core6-mvc\\ecommerce\\wwwroot\\template\\login\\css\\util.css",
+      "SourceId": "ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Code\\ASP.NET\\ecommerce-aspnet-core6-mvc\\ecommerce\\wwwroot\\",
+      "BasePath": "_content/ecommerce",
+      "RelativePath": "template/login/css/util.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\login\\css\\util.css"
     },
     {
       "Identity": "F:\\Code\\ASP.NET\\ecommerce-aspnet-core6-mvc\\ecommerce\\wwwroot\\template\\sass\\_base.scss",
