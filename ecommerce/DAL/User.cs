@@ -18,14 +18,14 @@ public partial class User
     public string? LastName { get; set; }
 
     [Required]
-    [UserUniqueAttribute]
-    [Column("phoneNo", TypeName = "varchar(254)")]
+    //[UserUniqueAttribute]
+    //[Column("phoneNo", TypeName = "varchar(254)")]
     public string? PhoneNo { get; set; }
 
     [Required]
     [EmailAddress]
-    [EmailUserUniqueAttribute]
-    [Column("email", TypeName = "varchar(254)")]
+    //[EmailUserUniqueAttribute]
+    //[Column("email", TypeName = "varchar(254)")]
     public string? Email { get; set; }
 
     public DateTime? DateOfBirth { get; set; }

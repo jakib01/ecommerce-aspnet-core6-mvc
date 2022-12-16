@@ -35,7 +35,7 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="/User/SignUp"><i class="fa fa-user"></i> Login</a>
+                                <a href="/User/Login"><i class="fa fa-user"></i> Login</a>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
 
                         <div class="form-label-group">
                             <label asp-for="PhoneNo">Phone Number</label>
-                            <input type="tel" asp-for="PhoneNo" id="PhoneNo" name="PhoneNo" class="form-control" placeholder="Phone Number">
+                            <input type="text" asp-for="PhoneNo" id="PhoneNo" name="PhoneNo" class="form-control" placeholder="Phone Number">
                             <span asp-validation-for="PhoneNo" class="text-danger"></span>
 
                         </div>
@@ -135,6 +135,7 @@
                         <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign Up</button>
 
                         <hr class="my-4">
+                        <a class="btn btn-lg btn-success btn-block text-uppercase" href="/User/Login"><i class="fa fa-phone mr-2"></i> Sign in with Phone Number</a>
                         <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fa fa-google mr-2"></i> Sign in with Google</button>
                         <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
                     </form>
@@ -142,9 +143,5 @@
             </div>
         </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Login">Back to Login</a>
 </div>
 

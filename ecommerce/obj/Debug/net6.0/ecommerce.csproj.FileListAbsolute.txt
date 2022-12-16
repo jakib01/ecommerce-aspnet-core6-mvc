@@ -263,3 +263,4 @@ F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\refint\eco
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\ecommerce.pdb
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\ecommerce.genruntimeconfig.cache
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\ref\ecommerce.dll
+F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Web.Helpers.Crypto.dll

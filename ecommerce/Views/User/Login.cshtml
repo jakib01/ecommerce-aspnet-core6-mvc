@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ecommerce.DAL.User
+
+@{
     ViewData["Title"] = "Login";
 }
 
@@ -33,7 +35,7 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="/User/Index"><i class="fa fa-user"></i> Login</a>
+                                <a href="/User/Login"><i class="fa fa-user"></i> Login</a>
                             </div>
                         </div>
                     </div>
@@ -83,6 +85,15 @@
     <!-- Header Section End -->
 
 
+@if (TempData["Success"] != null)
+{
+ <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+}
+
+@if (TempData["Faild"] != null)
+{
+ <p class="alert alert-danger" id="FaildMessage">@TempData["Faild"]</p>
+}
 
 <div class="container">
     <div class="row">
@@ -90,15 +101,17 @@
             <div class="card card-signin my-5">
                 <div class="card-body">
                     <h5 class="card-title text-center">Sign In</h5>
-                    <form class="form-signin">
+                    <form class="form-signin" asp-action="Login">
                         <div class="form-label-group">
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                            <label for="inputEmail">Email address</label>
+                            <label asp-for="PhoneNo">Phone Number</label>
+                            <input type="text" asp-for="PhoneNo" id="PhoneNo" name="PhoneNo" class="form-control" placeholder="Phone Number">
+                            <span asp-validation-for="PhoneNo" class="text-danger"></span>
                         </div>
 
                         <div class="form-label-group">
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                            <label for="inputPassword">Password</label>
+                            <label asp-for="Password">Password</label>
+                            <input type="password" asp-for="Password" id="Password" name="Password" class="form-control" placeholder="Password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
 
                         <div class="custom-control custom-checkbox mb-3">
@@ -107,6 +120,7 @@
                         </div>
                         <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                         <hr class="my-4">
+                        <a class="btn btn-lg btn-success btn-block text-uppercase" href="/User/SignUp"><i class="fa fa-phone mr-2"></i> Register with Phone Number</a>
                         <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fa fa-google mr-2"></i> Sign in with Google</button>
                         <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
                     </form>

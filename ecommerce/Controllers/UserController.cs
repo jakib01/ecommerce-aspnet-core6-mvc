@@ -3,6 +3,7 @@ using ecommerce.DAL;
 using ecommerce.Models;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System.Web.Helpers;
 
 namespace ecommerce.Controllers
 {
@@ -13,6 +14,39 @@ namespace ecommerce.Controllers
         public IActionResult Login()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(User loginUser,String ReturnUrl)
+        {
+            var user = db.Users.FirstOrDefault(u => u.PhoneNo == loginUser.PhoneNo);
+
+            var isPasswordMatched = Crypto.VerifyHashedPassword(user.Password, loginUser.Password);
+
+            if (isPasswordMatched)
+            {
+                HttpContext.Session.SetString("username", user.FirstName);
+                //return View();
+
+                //TempData["Success"] = "Added Successfully!";
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                TempData["Faild"] = "Invalid Account";
+                return RedirectToAction("Login", "User");
+            }
+
+            //return View();
+        }
+
+
+        [Route("logout")]
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("username");
+            return RedirectToAction("Login");
         }
 
         public IActionResult SignUp()
@@ -27,9 +61,7 @@ namespace ecommerce.Controllers
             if (ModelState.IsValid)
             {
                 try {
-
-                    var hashsalt = EncryptPassword(user.Password);
-                    user.Password = hashsalt.Hash;
+                    user.Password = Crypto.HashPassword(user.Password);
                     user.CreatedDate = DateTime.Now;
 
                     db.Users.Add(user);
@@ -48,26 +80,6 @@ namespace ecommerce.Controllers
 
             return View();
         }
-
-
-        public HashSalt EncryptPassword(String password)
-        {
-            byte[] salt = new byte[128 / 8]; // Generate a 128-bit salt using a secure PRNG
-            using (var rng = RandomNumberGenerator.Create())
-            {
-                rng.GetBytes(salt);
-            }
-            string encryptedPassw = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-                password: password,
-                salt: salt,
-                prf: KeyDerivationPrf.HMACSHA1,
-                iterationCount: 10000,
-                numBytesRequested: 256 / 8
-            ));
-            return new HashSalt { Hash = encryptedPassw, Salt = salt };
-
-        }
-
 
     }
 }

@@ -32,8 +32,18 @@
                 </ul>
             </div>
             <div class="header__top__right__auth">
-                <a href="/User/SignUp"><i class="fa fa-user"></i> Login</a>
+                <a href="/User/Login"><i class="fa fa-user"></i> Login</a>
             </div>
+
+            @if ( @Context.Session.GetString("username") != null )
+            {
+                <div class="header__top__right__auth">
+                    @Context.Session.GetString("username")
+                    <a asp-controller="User" asp-action="Logout">Logout</a>
+                </div>
+            }
+            
+            
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
@@ -98,8 +108,17 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="/User/SignUp"><i class="fa fa-user"></i> Login</a>
+                                <a href="/User/Login"><i class="fa fa-user"></i> Login</a>
                             </div>
+
+                            @if ( Context.Session.GetString("username") != null )
+                            {
+                                <div class="header__top__right__auth">
+                                    @Context.Session.GetString("username")
+                                    <a asp-controller="User" asp-action="Logout">Logout</a>
+                                </div>
+                            }
+
                         </div>
                     </div>
                 </div>

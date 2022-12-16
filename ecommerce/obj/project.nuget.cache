@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eD4qyxW4eg8dZ61TgGm9B6DQWpmOvDknBncSfX/g0BMHxnJwk/RaZfgmxF4L5oL9Y7MKLs4Ux0Zl0MipKzubFA==",
+  "dgSpecHash": "z8+TvAYUTUGoBIWSxhdMbdFeDeEXPDLmQP7HttxU7v7dudvfvuKHE25cLl8S8EvtCEQWl4HdK8xZGWcLHzGWjg==",
   "success": true,
   "projectFilePath": "F:\\Code\\ASP.NET\\ecommerce-aspnet-core6-mvc\\ecommerce\\ecommerce.csproj",
   "expectedPackageFiles": [
@@ -173,9 +173,21 @@
     "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\system.threading.tasks.dataflow.6.0.0.nupkg.sha512",
     "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.web.helpers.crypto\\3.2.3\\system.web.helpers.crypto.3.2.3.nupkg.sha512",
     "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Julker Nien Akib\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Web.Helpers.Crypto 3.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Web.Helpers.Crypto",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
