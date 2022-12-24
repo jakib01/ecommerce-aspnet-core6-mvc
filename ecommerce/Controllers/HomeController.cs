@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ecommerce.Models;
 using ecommerce.DAL;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ecommerce.Controllers;
 
@@ -21,7 +22,7 @@ public class HomeController : Controller
 
         return View();
     }
-
+    
     public IActionResult Privacy()
     {
         return View();

@@ -75,6 +75,7 @@ F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Ref
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Runtime.Caching.dll
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Web.Helpers.Crypto.dll
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Windows.Extensions.dll
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -263,4 +264,3 @@ F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\refint\eco
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\ecommerce.pdb
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\ecommerce.genruntimeconfig.cache
 F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\obj\Debug\net6.0\ref\ecommerce.dll
-F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce\bin\Debug\net6.0\System.Web.Helpers.Crypto.dll

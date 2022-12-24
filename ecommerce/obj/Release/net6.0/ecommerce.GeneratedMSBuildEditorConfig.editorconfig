@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Code\ASP.NET\ecommerce-aspnet-core6-mvc\ecommerce
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Code/ASP.NET/ecommerce-aspnet-core6-mvc/ecommerce/Views/AdminDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Code/ASP.NET/ecommerce-aspnet-core6-mvc/ecommerce/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

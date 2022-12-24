@@ -1,0 +1,9 @@
+﻿@inject IHttpContextAccessor context;
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h1>Admin Dashboard</h1>
+<h3> user ID : @context.HttpContext.Session.GetInt32("userid")</h3>
+<h3> user ID : @context.HttpContext.Session.GetString("username")</h3>
+
