@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace ecommerce.DAL;
+namespace ecommerce.Models;
 
 public partial class EcommerceDotnetCoreDibboContext : DbContext
 {

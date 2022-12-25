@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ecommerce.Models;
 
-namespace ecommerce.DAL;
+namespace ecommerce.Models;
 
 public partial class User
 {

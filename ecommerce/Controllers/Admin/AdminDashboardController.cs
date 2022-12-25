@@ -4,20 +4,25 @@ using System.Security.Claims;
 using ecommerce.DAL;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using ecommerce.Models;
 
 namespace ecommerce.Controllers.Admin
 {
     public class AdminDashboardController : Controller
     {
-        public AdminDashboardController(IHttpContextAccessor userid)
+        private int userID;
+        UserInfo userInfo = new UserInfo();
+
+        public AdminDashboardController()
         {
-            var userID = userid.HttpContext.Session.GetInt32("userid");
+            userID = userInfo.getLoggedInUserId();
         }
 
-        public IActionResult Index()
+        public  IActionResult Index()
         {
-
-            return View();
+            var userData =  userInfo.getLoggedInUserInfo(userID);
+            Console.WriteLine(userData);
+            return View(userData);
         }
 
 

@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ecommerce.Models;
-using ecommerce.DAL;
 using Microsoft.AspNetCore.Authorization;
 
 namespace ecommerce.Controllers;

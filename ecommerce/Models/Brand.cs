@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ecommerce.DAL;
+namespace ecommerce.Models;
 
 public partial class Brand
 {

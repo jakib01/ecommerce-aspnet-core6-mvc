@@ -4,9 +4,8 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using ecommerce.Models;
-using ecommerce.DAL;
 
-namespace ecommerce.Models
+namespace ecommerce.DAL
 {
     public class UserUniqueAttribute : ValidationAttribute
     {
