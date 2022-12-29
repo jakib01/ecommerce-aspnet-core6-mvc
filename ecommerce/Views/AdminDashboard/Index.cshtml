@@ -1,12 +1,13 @@
 ﻿@inject IHttpContextAccessor context;
-@using ecommerce.Models 
+@*@using ecommerce.Models *@
+@model IEnumerable<ecommerce.Models.User>
 @{
     ViewData["Title"] = "Admin Dashboard";
 }
 
-@{  
+@*@{  
    var userData = ViewData.Model;   
-}
+}*@
 
 <h1>Admin Dashboard</h1>
 <h3> user ID : @context.HttpContext.Session.GetInt32("userid")</h3>
@@ -21,18 +22,39 @@
       <th scope="col">Email</th>
       <th scope="col">Phone No.</th>
       <th scope="col">Is Admin</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Address</th>
     </tr>
   </thead>
   <tbody>
-      <tr>
-          <th scope="row">@userData.Value.UserId</th>
-          <th>@userData.Value.FirstName</th>
-@*          <th>@Model.FirstName</th>
-          <th>@Model.LastName</th>
-          <th>@Model.Email</th>
-          <th>@Model.PhoneNo</th>
-          <th>@Model.IsAdmin</th>*@
+@*        @foreach (var item in Model){
+        <tr>
+          <th scope="row">@item.UserId</th>
+          <th>@item.FirstName</th>
+          <th>@item.FirstName</th>
+          
+          <th>@item.Email</th>
+          <th>@item.PhoneNo</th>
+          <th>@item.UserProfiles</th>
         </tr>
-    
+        }*@
+
+        @foreach (var item in Model){
+        <tr>
+          <th scope="row">@item.UserId</th>
+          <th>@item.FirstName</th>
+          <th>@item.FirstName</th>
+          
+          <th>@item.Email</th>
+          <th>@item.PhoneNo</th>
+          <th>@item.IsAdmin</th>
+                @foreach (var profile in item.UserProfiles)
+                {
+                <th>@profile.FullName</th>
+                <th>@profile.Address</th>
+                    
+                }
+        </tr>
+        }
   </tbody>
 </table>

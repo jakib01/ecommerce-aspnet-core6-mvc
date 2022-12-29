@@ -35,6 +35,8 @@ public partial class EcommerceDotnetCoreDibboContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    public virtual DbSet<UserProfile> UserProfiles { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=JULKERNIENAKIB;Database=ecommerce_dotnet_core_dibbo;User Id=sa; Password=Tcl142536;TrustServerCertificate=True;");
@@ -84,6 +86,66 @@ public partial class EcommerceDotnetCoreDibboContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Carts)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Carts__UserI__3F4668f44");
+        });
+
+
+
+        modelBuilder.Entity<UserProfile>(entity =>
+        {
+            entity.HasKey(e => e.ProfileId);
+
+            entity.ToTable("UserProfile");
+
+            entity.Property(e => e.ProfileId).HasColumnName("ProfileID");
+
+            entity.Property(e => e.Address).HasColumnType("text");
+
+            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+            entity.Property(e => e.DateOfBirth).HasColumnType("date");
+
+            entity.Property(e => e.DeletedDate).HasColumnType("datetime");
+
+            entity.Property(e => e.EmailVerifiedAt).HasColumnType("datetime");
+
+            entity.Property(e => e.FullName)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");
+
+            entity.Property(e => e.IsEmailVerified).HasDefaultValueSql("((0))");
+
+            entity.Property(e => e.NidNo)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.Property(e => e.Photo)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.Property(e => e.RegistrationDate).HasColumnType("datetime");
+
+            entity.Property(e => e.ShippingAddress).HasColumnType("text");
+
+            entity.Property(e => e.TinNo)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.Property(e => e.UserType)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .IsFixedLength();
+
+            entity.Property(e => e.VerifiedDate).HasColumnType("datetime");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserProfiles)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserProfiles__UserI__3F4668f44");
         });
 
         modelBuilder.Entity<Category>(entity =>
@@ -227,7 +289,7 @@ public partial class EcommerceDotnetCoreDibboContext : DbContext
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-            entity.Property(e => e.DateOfBirth).HasColumnType("date");
+            //entity.Property(e => e.DateOfBirth).HasColumnType("date");
             entity.Property(e => e.Email)
                 .HasMaxLength(255)
                 .IsUnicode(false);
@@ -253,7 +315,7 @@ public partial class EcommerceDotnetCoreDibboContext : DbContext
             entity.Property(e => e.RememberToken)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.ShippingAddress).HasColumnType("text");
+            //entity.Property(e => e.ShippingAddress).HasColumnType("text");
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
         });
 
